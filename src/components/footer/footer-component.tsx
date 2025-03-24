@@ -137,7 +137,15 @@ export default function FooterComponent() {
           variant="body2"
           color="grey.500"
         >
-          © 2025 meulogo , Todos os direitos reservados.
+          © 2025 safetrip , Todos os direitos reservados.
+        </Typography>
+        <Typography
+          sx={{ mt: 2 }}
+          textAlign="center"
+          variant="body2"
+          color="primary"
+        >
+          bruno.moura.code@gmail.com
         </Typography>
       </Box>
     </Box>

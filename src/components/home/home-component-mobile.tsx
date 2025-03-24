@@ -30,7 +30,7 @@ export default function HomeComponent() {
 
         <List
           sx={{
-            background: '#f3f3f3',
+            background: '#fff',
             borderRadius: 2,
             mt: 2,
             boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
@@ -53,7 +53,6 @@ export default function HomeComponent() {
             >
               Qual meio de transporte?
             </Typography>
-
             <HomeSearchComponents />
           </Box>
           <Box sx={{ m: 2 }}>

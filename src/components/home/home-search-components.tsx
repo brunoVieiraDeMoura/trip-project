@@ -17,6 +17,8 @@ import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import LocalTaxiIcon from '@mui/icons-material/LocalTaxi';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import React from 'react';
 import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 
@@ -49,6 +51,8 @@ export default function HomeSearchComponents() {
     <Box>
       <Box
         sx={{
+          p: 1,
+          borderRadius: 2,
           display: 'flex',
           gap: 2,
         }}
@@ -131,6 +135,7 @@ export default function HomeSearchComponents() {
         variant="middle"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+        {/* PARTIDA E DESTINO */}
         <ListItem
           sx={{
             display: 'flex',
@@ -242,6 +247,7 @@ export default function HomeSearchComponents() {
             </Drawer>
           </Box>
         </ListItem>
+        {/* DATA */}
         <ListItem
           sx={{
             display: 'flex',
@@ -271,10 +277,94 @@ export default function HomeSearchComponents() {
                 <DateRangeIcon sx={{ fontSize: '32px' }} color="secondary" />
                 <Box>
                   <Typography variant="body2" color="grey.400">
-                    Chegada / Partida
+                    Chegada / Saída
                   </Typography>
                   <Typography variant="body1" color="grey.700">
                     Selecione as datas
+                  </Typography>
+                </Box>
+              </Box>
+            </ListItemButton>
+          </Box>
+        </ListItem>
+        {/* HOSPEDES */}
+        <ListItem
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'start',
+            width: '100%',
+            background: '#fdfdfd',
+            boxShadow: 'rgba(100, 100, 111, 0.05) 0px 1px .5px .5px',
+            borderRadius: 1,
+          }}
+          disablePadding
+        >
+          <Box
+            sx={{
+              width: '100%',
+            }}
+          >
+            <ListItemButton sx={{ width: '100%' }}>
+              <Box
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  width: '100%',
+                  gap: '8px',
+                }}
+              >
+                <PeopleOutlineIcon
+                  sx={{ fontSize: '32px' }}
+                  color="secondary"
+                />
+                <Box>
+                  <Typography variant="body2" color="grey.400">
+                    2 hóspedes, 1 quarto
+                  </Typography>
+                  <Typography variant="body1" color="grey.700">
+                    Hóspedes e quartos
+                  </Typography>
+                </Box>
+              </Box>
+            </ListItemButton>
+          </Box>
+        </ListItem>
+
+        {/* VALOR MÁXIMO */}
+        <ListItem
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'start',
+            width: '100%',
+            background: '#fdfdfd',
+            boxShadow: 'rgba(100, 100, 111, 0.05) 0px 1px .5px .5px',
+            borderRadius: 1,
+          }}
+          disablePadding
+        >
+          <Box
+            sx={{
+              width: '100%',
+            }}
+          >
+            <ListItemButton sx={{ width: '100%' }}>
+              <Box
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  width: '100%',
+                  gap: '8px',
+                }}
+              >
+                <LocalAtmIcon sx={{ fontSize: '32px' }} color="secondary" />
+                <Box>
+                  <Typography variant="body2" color="grey.400">
+                    Valor máximo
+                  </Typography>
+                  <Typography variant="body1" color="grey.700">
+                    R$1200,00
                   </Typography>
                 </Box>
               </Box>
