@@ -18,9 +18,10 @@ export default function Home() {
         sx={{
           width: '100%',
           display: {
-            sm: 'flex',
-            md: 'none',
+            xs: 'flex',
+            sm: 'none',
           },
+          flexDirection: 'column',
         }}
       >
         <HeaderComponent />
@@ -41,8 +42,8 @@ export default function Home() {
           width: '100%',
           height: '100vh',
           display: {
-            sm: 'none',
-            md: 'flex',
+            xs: 'none',
+            sm: 'flex',
           },
           justifyContent: 'center',
           alignItems: 'center',
